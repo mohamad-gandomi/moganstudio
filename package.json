@@ -1,0 +1,22 @@
+{
+  "name": "mogan-studio",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=@mogan/web",
+    "dev:api": "npm run start:dev --workspace=@mogan/api",
+    "build": "npm run build --workspace=@mogan/api && npm run build --workspace=@mogan/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:generate": "npm run db:generate --workspace=@mogan/api",
+    "db:migrate": "npm run db:migrate --workspace=@mogan/api",
+    "admin:hash": "npm run admin:hash --workspace=@mogan/web"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5"
+  }
+}
