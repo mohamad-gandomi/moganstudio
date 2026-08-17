@@ -1,6 +1,5 @@
-// TODO: Replace placeholders with Gandomi's production profile URLs before launch.
 export const socialLinks = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Instagram", href: "#" },
+  { label: "GitHub", href: "https://github.com/mohamad-gandomi" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/mohamad-gandomi-a7364085/" },
+  { label: "Instagram", href: "https://www.instagram.com/moganstudio/" },
 ] as const;
