@@ -6,7 +6,7 @@ export function SelectedWork() {
   return (
     <section id="work" className="section-space scroll-mt-20">
       <div className="shell">
-        <SectionHeading eyebrow="Selected Work" title={<>Detailed concepts. <span className="font-serif font-normal italic">Honest</span> presentation.</>} copy="Three self-initiated projects showing how I approach ecommerce, content systems, and application interfaces. These are concept projects, not client commissions." />
+        <SectionHeading eyebrow="Selected Work" title={<>Purpose-built digital products. <span className="font-serif font-normal italic">Thoughtfully</span> executed.</>} copy="Three independent builds demonstrating how I solve ecommerce, content management, and application interface challenges from strategy through implementation." />
         {projects.map((project, index) => <CaseStudy key={project.title} project={project} index={index} />)}
       </div>
     </section>
