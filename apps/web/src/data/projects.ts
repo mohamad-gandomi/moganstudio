@@ -6,19 +6,26 @@ export type CaseStudy = {
   result: string;
   capabilities: string[];
   visual: "furniture" | "architecture" | "dashboard";
+  imagePresentation?: "browser" | "showcase";
   image: { src: string; alt: string };
+  demoUrl?: string;
 };
 
 export const projects: CaseStudy[] = [
   {
-    title: "Luxury Furniture WooCommerce Store",
+    title: "Luxury Furniture WooCommerce",
     context: "A premium furniture ecommerce experience designed to make a large catalog feel refined and easy to shop.",
     problem: "Complex products become difficult to browse when filters, variants, product information, and checkout are not organized clearly.",
     solution: "A responsive storefront with focused product discovery, structured detail pages, clear variants, and a streamlined purchase flow.",
     result: "A polished ecommerce experience with flexible product presentation and a performance-aware WooCommerce foundation.",
     capabilities: ["WordPress", "WooCommerce", "Ecommerce UX", "Performance"],
     visual: "furniture",
-    image: { src: "/images/projects/furniture-store.png", alt: "Interface for a refined furniture ecommerce store" },
+    imagePresentation: "showcase",
+    image: {
+      src: "/images/projects/luxury-furniture-storefront-showcase-v2.png",
+      alt: "Luxury furniture storefront displayed across laptop, tablet, and mobile devices",
+    },
+    demoUrl: "https://luxury-furniture-storefront.vercel.app/",
   },
   {
     title: "Architecture Company WordPress Site",

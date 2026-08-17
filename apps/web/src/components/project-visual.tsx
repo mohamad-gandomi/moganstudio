@@ -13,7 +13,20 @@ function BrowserFrame({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function ProjectVisual({ image }: { image: { src: string; alt: string } }) {
+type ProjectVisualProps = {
+  image: { src: string; alt: string };
+  presentation?: "browser" | "showcase";
+};
+
+export function ProjectVisual({ image, presentation = "browser" }: ProjectVisualProps) {
+  if (presentation === "showcase") {
+    return (
+      <div className="relative aspect-square overflow-hidden rounded-xl border border-neutral-800 bg-neutral-950 shadow-[0_16px_50px_rgba(0,0,0,.16)]">
+        <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+      </div>
+    );
+  }
+
   return (
     <BrowserFrame>
       <div className="relative aspect-[1.58] bg-subtle">
