@@ -35,7 +35,12 @@ export const projects: CaseStudy[] = [
     result: "A maintainable content system for managing services, projects, and editorial content without rebuilding layouts.",
     capabilities: ["WordPress", "CMS Architecture", "Security", "Maintainability"],
     visual: "architecture",
-    image: { src: "/images/projects/architecture-site.png", alt: "Website interface for a contemporary architecture practice" },
+    imagePresentation: "showcase",
+    image: {
+      src: "/images/projects/architecture-company-showcase.png",
+      alt: "Architecture company website displayed across laptop, tablet, and mobile devices",
+    },
+    demoUrl: "https://architecture-company-one.vercel.app/",
   },
   {
     title: "SaaS Project Management Dashboard",
