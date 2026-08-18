@@ -22,7 +22,7 @@ export const projects: CaseStudy[] = [
     visual: "furniture",
     imagePresentation: "showcase",
     image: {
-      src: "/images/projects/luxury-furniture-storefront-showcase-v2.png",
+      src: "/images/projects/luxury-furniture-storefront-showcase-v3.png",
       alt: "Luxury furniture storefront displayed across laptop, tablet, and mobile devices",
     },
     demoUrl: "https://luxury-furniture-storefront.vercel.app/",
@@ -50,6 +50,11 @@ export const projects: CaseStudy[] = [
     result: "An authenticated dashboard with understandable project and task workflows across screen sizes.",
     capabilities: ["Next.js", "NestJS", "PostgreSQL", "Dashboard UX"],
     visual: "dashboard",
-    image: { src: "/images/projects/project-dashboard.png", alt: "Project management dashboard interface" },
+    imagePresentation: "showcase",
+    image: {
+      src: "/images/projects/rove-project-management-showcase-v4.png",
+      alt: "Rove project management dashboard displayed across laptop, tablet, and mobile devices",
+    },
+    demoUrl: "https://saas-project-management-tawny.vercel.app/",
   },
 ];
